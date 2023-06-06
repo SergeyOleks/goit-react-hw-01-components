@@ -17,18 +17,17 @@ const TransactionHistory = ({ items }) => {
             <tr key={id} className={css.listRows}>
               <td className={css.transactionTableItem}>{type}</td>
               <td className={css.transactionTableItem}>{amount}</td>
-              <td className={css.transactionTableItem}>{currency}</td> 
+              <td className={css.transactionTableItem}>{currency}</td>
             </tr>
           );
-        })} 
+        })}
       </tbody>
     </table>
   );
 };
 
 TransactionHistory.propTypes = {
-  avatar: PropTypes.objectOf(PropTypes.string),
+  avatar: PropTypes.objectOf(PropTypes.object),
 };
-
 
 export default TransactionHistory;

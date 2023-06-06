@@ -1,4 +1,6 @@
+import { type } from '@testing-library/user-event/dist/type';
 import css from './Statistics.module.css';
+import PropTypes, { object } from 'prop-types';
 
 const Statistics = ({ title = null, stats }) => {
   const data = {};
@@ -51,5 +53,10 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object),
+};
 
 export default Statistics;
