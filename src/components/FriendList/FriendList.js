@@ -2,6 +2,7 @@ import css from './FriendList.module.css';
 import FriendListItem from 'components/FriendListItem/FriendListItem';
 import friends from '../friends.json';
 
+
 const FriendList = () => {
   return (
     <ul className={css.friendList}>
@@ -19,5 +20,7 @@ const FriendList = () => {
     </ul>
   );
 };
+
+
 
 export default FriendList;
